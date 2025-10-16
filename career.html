@@ -3,21 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>MSI CDO: Career Exploration</title>
 </head>
 <body>
 
 <header>
-    <a href = "#maincontent">Skip to Main Content</a>
-          <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
-          <nav>
-              <ul>
-                  <li><a href = "index.html">Home</a></li>
-                  <li><a href = "resume.html">Resumes</a></li>
-                  <li><a href = "networking.html">Networking & Connections</a></li>
-                  <li><a href = "career.html">Career Exploration</a></li>
-              </ul>
-          </nav>
+  <a href = "#maincontent" class="skip-link">Skip to Main Content</a>
+  <nav class="navbar">
+    <div class="nav-logo">
+      <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="University of Michigan School of Information logo">
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="career.html" class="active">Careers</a>
+      <a href="networking.html">Networking</a>
+      <a href="resume.html">Resume</a>
+    </div>
+  </nav>
+
     <h1>MSI Career Development: Career Exploration</h1>
 </header>
 <main id="maincontent">
@@ -52,8 +57,27 @@
         <!-- Content taken & modified from UMGPT with the prompt, "Write me a webpage of intro content to help meet the following requirements - this is for the home page": and then pasted in the client objectives & project requirements"
         UMGPT. (2025). UMGPT ( GPT-4.1 August 25th version) [Large language model]. -->
     </main>
-    <footer>
-        <p>University of Michigan School of Information | <a href="https://umich.instructure.com/courses/137916">UMSI Career Development Office </a></p>
-        </footer>
+
+
+    <footer class="footer">
+      <div class="footer-logo">
+        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="University of Michigan School of Information logo">
+      </div>
+
+      <div class="footer-info">
+        <p>© Copyright 2025 Regents of the University of Michigan</p>
+        <p>School of Information<br>
+           University of Michigan<br>
+           2200 Hayward Street<br>
+           Ann Arbor, MI 48109
+        </p>
+      </div>
+
+      <div class="contact-links">
+         <a href=" ">Contact Us</a><br>
+        <a href=" ">Privacy Statement</a>
+      </div>
+    </footer>
+
 </body>
 </html>
