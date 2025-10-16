@@ -104,6 +104,123 @@ section {
     padding: 16px 0;
 }
 
+.btn {
+    background-color: #00274C;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+.btn-small {
+    font-size: 12px;
+    padding: 8px 24px;
+}
+
+.btn-large {
+    font-size: 16px;
+    padding: 14px 42px;
+}
+
+
+.btn:hover {
+    background-color: #003366;
+}
+
+.btn:focus {
+    outline: 2px solid #FFD700;
+}
+
+
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    justify-items: center;
+  }
+
+  .card {
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    gap: 16px;
+    width: auto;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: left;
+    border: #dbdbdb;
+  }
+
+  .card-icon-1 {
+    width: 48px;
+    height: 48px;
+    background-color: #702082;
+    border-radius: 8px;
+  }
+
+.card-icon-2 {
+    width: 48px;
+    height: 48px;
+    background-color: #A5A508;
+    border-radius: 8px;
+}
+
+.card-icon-3 {
+    width: 48px;
+    height: 48px;
+    background-color: #D86018;
+    border-radius: 8px;
+}
+
+.card-icon-4 {
+    width: 48px;
+    height: 48px;
+    background-color: #00B2A9;
+    border-radius: 8px;
+}
+
+  .card-title {
+    color: #0f0f0f;
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  .card-subtitle {
+    color: #373737;
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 0 0 8px 0;
+  }
+
+
+  .card-btn {
+    background-color: #ffffff;
+    color: #00274C;
+    border: #00274C;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 12px 36px;
+    border-radius: 8px;
+    text-align: center;
+  }
+
+
+  .card-btn:hover {
+    background-color: #00274C;
+    color: white;
+  }
+
+  .card-btn:focus {
+    outline: 3px solid #FFD700;
+    outline-offset: 3px;
+  }
+
 .footer {
     display: grid;
     grid-template-columns: 1fr;
@@ -179,5 +296,10 @@ h2 {
 .navbar {
     padding: 16px 32px;
 }
+
+.card-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: auto;
+  }
 
 }
