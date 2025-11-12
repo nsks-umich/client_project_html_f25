@@ -6,20 +6,27 @@
     <link rel="stylesheet" href="css/html5reset.css">
     <link rel="stylesheet" href="css/style.css">
     <title>404 - Page Not Found | MSI Career Development Resource Hub</title>
+    <script src="js/navbar.js" defer></script>
+    <script src="js/footer-year.js" defer></script>
 </head>
 <body>
 
   <header>
   <a href = "#maincontent" class="skip-link">Skip to Main Content</a>
   <nav class="navbar">
-    <div class="nav-logo">
-      <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="University of Michigan School of Information logo">
-    </div>
-    <div class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="career.html">Careers</a>
-      <a href="networking.html">Networking</a>
-      <a href="resume.html">Resume</a>
+    <div class="navbar-container">
+      <div class="nav-logo">
+        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="University of Michigan School of Information logo">
+      </div>
+      <button class="hamburger-menu" id="hamburger-menu" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="hamburger-icon"></span>
+      </button>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="career.html">Careers</a>
+        <a href="networking.html">Networking</a>
+        <a href="resume.html">Resume</a>
+      </div>
     </div>
   </nav>
   </header>
@@ -51,22 +58,24 @@
     </main>
 
     <footer class="footer">
-      <div class="footer-logo">
-        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="University of Michigan School of Information logo">
-      </div>
+      <div class="footer-container">
+        <div class="footer-logo">
+          <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="University of Michigan School of Information logo">
+        </div>
 
-      <div class="footer-info">
-        <p>© Copyright 2025 Regents of the University of Michigan</p>
-        <p>School of Information<br>
-           University of Michigan<br>
-           2200 Hayward Street<br>
-           Ann Arbor, MI 48109
-        </p>
-      </div>
+        <div class="footer-info">
+          <p>© Copyright <span id="current-year">2025</span> Regents of the University of Michigan</p>
+          <p>School of Information<br>
+             University of Michigan<br>
+             2200 Hayward Street<br>
+             Ann Arbor, MI 48109
+          </p>
+        </div>
 
-      <div class="contact-links">
-         <a href=" ">Contact Us</a><br>
-        <a href=" ">Privacy Statement</a>
+        <div class="contact-links">
+           <a href=" ">Contact Us</a><br>
+          <a href=" ">Privacy Statement</a>
+        </div>
       </div>
     </footer>
 </body>
