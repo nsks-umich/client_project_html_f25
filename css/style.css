@@ -1,3 +1,7 @@
+/* ============================================
+   MOBILE FIRST - Base Styles (Mobile)
+   ============================================ */
+
 html {
     font-family: "IBM Plex Sans", sans-serif;
     margin: 0;
@@ -30,7 +34,6 @@ html {
     padding: 16px 20px;
 }
 
-
 .nav-logo img {
     height: 48px;
     margin-right: 40px;
@@ -49,15 +52,20 @@ html {
     font-size: 16px;
 }
 
-  .nav-links a:focus,
-  .nav-links a.active {
+.nav-links a:focus,
+.nav-links a.active {
     color: #FFCB05;
     font-weight: 700;
     text-decoration: underline;
 }
 
 .nav-links a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
+}
+
+header > h1 {
+    margin: 20px;
+    padding: 0;
 }
 
 main {
@@ -112,7 +120,7 @@ section {
     cursor: pointer;
     font-weight: 700;
     text-decoration: none;
-  }
+}
 
 .btn-small {
     font-size: 12px;
@@ -124,7 +132,6 @@ section {
     padding: 14px 42px;
 }
 
-
 .btn:hover {
     background-color: #003366;
 }
@@ -133,16 +140,15 @@ section {
     outline: 2px solid #FFD700;
 }
 
-
 .card-container {
     display: grid;
     grid-template-columns: 1fr;
     gap: 24px;
     justify-items: center;
     padding-top: 20px;
-  }
+}
 
-  .card {
+.card {
     display: grid;
     grid-template-rows: auto auto 1fr auto;
     gap: 16px;
@@ -152,19 +158,19 @@ section {
     padding: 20px;
     text-align: left;
     border: #dbdbdb;
-  }
+}
 
-  .card-icon {
+.card-icon {
     width: 48px;
     height: 48px;
-  }
+}
 
-  .card-icon-1 {
+.card-icon-1 {
     width: 48px;
     height: 48px;
     background-color: #702082;
     border-radius: 8px;
-  }
+}
 
 .card-icon-2 {
     width: 48px;
@@ -187,23 +193,22 @@ section {
     border-radius: 8px;
 }
 
-  .card-title {
+.card-title {
     color: #0f0f0f;
     font-size: 20px;
     line-height: 1.4;
     font-weight: 600;
     margin: 0;
-  }
+}
 
-  .card-subtitle {
+.card-subtitle {
     color: #373737;
     font-size: 14px;
     line-height: 1.4;
     margin: 0 0 8px 0;
-  }
+}
 
-
-  .card-btn {
+.card-btn {
     background-color: #ffffff;
     color: #00274C;
     border: #00274C;
@@ -214,18 +219,17 @@ section {
     padding: 12px 36px;
     border-radius: 8px;
     text-align: center;
-  }
+}
 
-
-  .card-btn:hover {
+.card-btn:hover {
     background-color: #00274C;
     color: white;
-  }
+}
 
-  .card-btn:focus {
+.card-btn:focus {
     outline: 3px solid #FFD700;
     outline-offset: 3px;
-  }
+}
 
 .footer {
     display: grid;
@@ -235,7 +239,7 @@ section {
     color: white;
     padding: 40px 20px;
     gap: 64px;
-  }
+}
 
 .footer-logo img {
     width: 140px;
@@ -266,46 +270,185 @@ section {
     text-decoration: underline;
 }
 
-
-
-@media (min-width: 800px) {
-.footer {
-      grid-template-columns: 1fr  1fr 1fr;
-      text-align: left;
-      padding: 40px 32px;
-
- }
-
- .nav-links {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 40px;
- }
-
- main {
-    margin: 32px;
+/* 404 Error Page Styles - Mobile */
+.error-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    padding: 40px 20px;
 }
 
-h1 {
-    font-size: 40px;
-    line-height: 1.3;
+.error-container {
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+}
+
+.error-visual {
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.error-number {
+    font-size: 120px;
     font-weight: 700;
-    margin: 32px;
+    color: #00274C;
+    line-height: 1;
+    margin: 0;
 }
 
-h2 {
+.error-icon {
+    color: #00274C;
+    opacity: 0.8;
+}
+
+h1.error-title,
+.error-title {
     font-size: 32px;
-    line-height: 1.4;
+    color: #00274C;
+    margin: 0 0 16px 0;
     font-weight: 700;
 }
 
-.navbar {
-    padding: 16px 32px;
+.error-message {
+    font-size: 18px;
+    color: #373737;
+    line-height: 1.6;
+    margin: 0 0 32px 0;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.card-container {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: auto;
-  }
+.error-actions {
+    margin: 32px 0;
+}
 
+.error-cta {
+    display: inline-block;
+}
+
+.error-suggestions {
+    margin-top: 48px;
+    padding-top: 32px;
+    border-top: 2px solid #dbdbdb;
+}
+
+.suggestions-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #00274C;
+    margin: 0 0 16px 0;
+}
+
+.suggestions-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px 24px;
+}
+
+.suggestions-list li {
+    margin: 0;
+}
+
+.suggestions-list a {
+    color: #00274C;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.suggestions-list a:hover {
+    background-color: #f8f8f8;
+    text-decoration: underline;
+}
+
+.suggestions-list a:focus {
+    outline: 2px solid #FFD700;
+    outline-offset: 2px;
+}
+
+/* ============================================
+   TABLET AND DESKTOP - Media Queries
+   ============================================ */
+
+@media (min-width: 700px) {
+    .footer {
+        grid-template-columns: 1fr 1fr 1fr;
+        text-align: left;
+        padding: 40px 32px;
+    }
+
+    .nav-links {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 40px;
+    }
+
+    .navbar {
+        padding: 16px 32px;
+    }
+
+    header > h1 {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    main {
+        margin: 32px auto;
+        max-width: 1200px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    h1 {
+        font-size: 40px;
+        line-height: 1.3;
+        font-weight: 700;
+        margin: 32px 0;
+    }
+
+    h2 {
+        font-size: 32px;
+        line-height: 1.4;
+        font-weight: 700;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: auto;
+    }
+}
+
+/* ============================================
+   LARGE DESKTOP - Additional Enhancements
+   ============================================ */
+
+@media (min-width: 1440px) {
+    .error-number {
+        font-size: 150px;
+    }
+
+    h1.error-title,
+    .error-title {
+        font-size: 40px;
+    }
+
+    .error-message {
+        font-size: 20px;
+    }
 }
