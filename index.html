@@ -8,6 +8,7 @@
     <title>MSI Career Development Resource Hub</title>
     <script src="js/navbar.js" defer></script>
     <script src="js/footer-year.js" defer></script>
+    <script src="js/accordion.js" defer></script>
 </head>
 <body>
 
@@ -94,13 +95,32 @@
 
     <section>
       <h2>Why Use This Resource?</h2>
-      <ul>
-        <li><strong>Everything in One Place:</strong> Stop searching endlessly—quickly access the resources you need for resumes, interviews, networking, mentorship, and more.</li>
-        <li><strong>Student-Focused Navigation:</strong> Browse by topic or question. Key areas are highlighted so you can get moving right away.</li>
-        <li><strong>Guidance Backed by Experts:</strong> All resources are recommended and reviewed by the UMSI Career Development Office, so you can trust the advice and materials you find here.</li>
-        <li><strong>Always Accessible:</strong> Visit the site anytime, from any device. We’re committed to meeting the accessibility needs of all students.</li>
-        <li><strong>Modern Support, UMSI Excellence:</strong> We benchmark against top peer institutions and integrate UMSI’s unique support, showcasing our commitment to your success.</li>
-      </ul>
+      <div class="resource-list">
+        <article class="resource-item">
+          <h3 class="resource-title">Everything in One Place</h3>
+          <p class="resource-description">
+            Stop searching endlessly—quickly access the resources you need for resumes, interviews, networking, mentorship, and more.
+          </p>
+        </article>
+        <article class="resource-item">
+          <h3 class="resource-title">Student-Focused Navigation</h3>
+          <p class="resource-description">
+            Browse by topic or question. Key areas are highlighted so you can get moving right away.
+          </p>
+        </article>
+        <article class="resource-item">
+          <h3 class="resource-title">Guidance Backed by Experts</h3>
+          <p class="resource-description">
+            All resources are recommended and reviewed by the UMSI Career Development Office, so you can trust the advice and materials you find here.
+          </p>
+        </article>
+        <article class="resource-item">
+          <h3 class="resource-title">Always Accessible</h3>
+          <p class="resource-description">
+            Visit the site anytime, from any device. We're committed to meeting the accessibility needs of all students.
+          </p>
+        </article>
+      </div>
     </section>
      <section>
       <div>
@@ -110,22 +130,6 @@
       <section>
       <div>
         <img class="banner-image" src="images/UMSI_CampusFall_UMSIBackpack_02.jpg" alt="A student wears a UMSI backpack in fall on the drag.">
-        <ul>
-            <li><a href="resume.html">Resumes</a></li>
-            <li><a>Networking & Connections</a></li>
-            <li><a>Career Exploration</a></li>
-            <li><a>Talk to a Career Coach</a></li>
-        </ul>
-      </div>
-      <div>
-        <h3>Most Popular Resources</h3>
-        <ul>
-          <li><a href="https://umsi.instructure.com/courses/12345/pages/resume-guide" target="_blank">UMSI Resume Guide</a></li>
-          <li><a href="https://umsi.campusgroups.com/cdo/home/" target="_blank">Attend a Career Event</a></li>
-          <li><a href="https://umsi.instructure.com/courses/12345/pages/networking-tips" target="_blank">Networking Tips</a></li>
-          <li><a href="https://umsi.instructure.com/courses/12345/pages/interview-prep" target="_blank">Interview Preparation</a></li>
-          <li><a href="https://careerlink.umich.edu" target="_blank">Career Link: UMSI’s Exclusive Career Portal</a></li>
-        </ul>
       </div>
     </section>
     <section>
@@ -136,6 +140,47 @@
     </section>
         <!-- Content taken & modified from UMGPT with the prompt, "Write me a webpage of intro content to help meet the following requirements - this is for the home page": and then pasted in the client objectives & project requirements"
         UMGPT. (2025). UMGPT ( GPT-4.1 August 25th version) [Large language model]. -->
+    <section>
+      <h2>Resume FAQ</h2>
+      <div class="accordion">
+        <div class="accordion-item">
+          <button class="accordion-header" aria-expanded="false">
+            <span class="accordion-title">How long should my resume be?</span>
+            <span class="accordion-icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion-content">
+            <p>For most UMSI students and new grads, one page is best. More experienced professionals may require two pages.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header" aria-expanded="false">
+            <span class="accordion-title">Do I need a different resume for each application?</span>
+            <span class="accordion-icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion-content">
+            <p>It's wise to tailor your resume to the requirements and keywords of each opportunity.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header" aria-expanded="false">
+            <span class="accordion-title">Is it okay to include coursework or student projects?</span>
+            <span class="accordion-icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion-content">
+            <p>Absolutely! UMSI coursework and projects are valued by employers, especially if they show relevant skills and impact.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header" aria-expanded="false">
+            <span class="accordion-title">How often should I update my resume?</span>
+            <span class="accordion-icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion-content">
+            <p>Update your resume every semester, after major projects, or whenever you gain a new role or responsibility.</p>
+          </div>
+        </div>
+      </div>
+    </section>
     </main>
     <footer class="footer">
       <div class="footer-container">
